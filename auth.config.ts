@@ -1,4 +1,4 @@
-import type { NextAuthConfig } from 'next-auth';
+import type { NextAuthConfig, Session } from 'next-auth';
 import { NextRequest } from 'next/server';
 
 export const authConfig = {
@@ -10,7 +10,7 @@ export const authConfig = {
       auth,
       request: { nextUrl },
     }: {
-      auth: { user: string };
+      auth: Session | null;
       request: NextRequest;
     }) {
       const isLoggedIn = !!auth?.user;
