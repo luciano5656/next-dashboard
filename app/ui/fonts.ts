@@ -7,4 +7,4 @@ export const lusitana = Lusitana({
   subsets: ['latin'],
 });
 
-export const montserrat = Montserrat({ subsets: ['latin'] })
+export const montserrat = Montserrat({ subsets: ['latin'] });
